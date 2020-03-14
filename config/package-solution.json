@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "metrotiles",
+    "id": "3f48f605-db98-40bf-a0f6-354f7958d5df",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "features": [{
+      "title": "Metrotiles",
+      "description": "metrotiles app for tile links",
+      "id": "8cb5a958-363c-4de5-8a86-6e577933fbe6",
+      "version": "1.0.0.0",
+      "assets": {
+        "elementManifests": [
+          "elements.xml"
+        ],
+        "elementFiles":[
+          "schema.xml"
+        ]
+      }
+    }]
+  },
+  "paths": {
+    "zippedPackage": "solution/metrotiles-app.sppkg"
+  }
+}

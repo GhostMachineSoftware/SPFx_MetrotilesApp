@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+    <Field ID="{20B839FA-0C22-46EA-95E6-1AC87BD578E1}"
+            Name="TileTitle"
+            DisplayName="Tile Title"
+            Type="Text"
+            Required="TRUE"
+            Group="Metrotile Columns" />
+
+    <Field ID="{5A068EC3-5AB5-477E-82D1-FE66A3380DF5}"
+            Name="TileDescription"
+            DisplayName="Tile Description"
+            Type="Text"
+            Required="TRUE"
+            Group="Metrotile Columns" />
+
+    <Field ID="{10254442-1556-4251-9FF8-56A1DF0892BA}"
+            Name="TileImage"
+            DisplayName="Tile Image"
+            Type="Text"
+            Required="TRUE"
+            Group="Metrotile Columns" />
+
+    <Field ID="{A649C36A-7A73-48EF-BF0D-7927A4D50C92}"
+            Name="TileLink"
+            DisplayName="Tile Link"
+            Type="Text"
+            Required="TRUE"
+            Group="Metrotile Columns" />
+
+    <Field ID="{6FC7D265-617D-4268-A7EA-463863DBB731}"
+            Name="TileOrder"
+            DisplayName="Tile Order"
+            Type="Number"
+            Decimal="0"
+            Min="1"
+            Max="18"
+            Required="TRUE"
+            Group="Metrotile Columns" />
+
+    <Field ID="{33C409C1-C5DA-48D5-9D0F-752E2F6D8D55}"
+            Name="TileBrowse"
+            DisplayName="Tile Browse"
+            Type="Choice"
+            Required="TRUE"
+            Group="Metrotile Columns">
+        <CHOICES>
+            <CHOICE>_self</CHOICE>
+            <CHOICE>_top</CHOICE>
+            <CHOICE>_blank</CHOICE>
+            <CHOICE>_parent</CHOICE>
+        </CHOICES>
+    </Field>
+
+    <ContentType ID="0x010042D0C1C200A14B6887742B6344675C8B" 
+            Name="Metrotiles Group" 
+            Group="Metrotiles Content Types" 
+            Description="Sample content types from web part solution">
+        <FieldRefs>        
+            <FieldRef ID="{20B839FA-0C22-46EA-95E6-1AC87BD578E1}" /> 
+            <FieldRef ID="{5A068EC3-5AB5-477E-82D1-FE66A3380DF5}" /> 
+            <FieldRef ID="{10254442-1556-4251-9FF8-56A1DF0892BA}" /> 
+            <FieldRef ID="{A649C36A-7A73-48EF-BF0D-7927A4D50C92}" /> 
+            <FieldRef ID="{6FC7D265-617D-4268-A7EA-463863DBB731}" /> 
+            <FieldRef ID="{33C409C1-C5DA-48D5-9D0F-752E2F6D8D55}" />
+        </FieldRefs>
+    </ContentType> 
+
+    <ListInstance 
+            CustomSchema="schema.xml"
+            FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+            Title="Metrotiles" 
+            Description="Metrotiles"
+            TemplateType="100"
+            Url="Lists/Metrotiles">
+    </ListInstance>
+
+</Elements>

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "metrotiles-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/metrotiles/MetrotilesWebPart.js",
+          "manifest": "./src/webparts/metrotiles/MetrotilesWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "https://code.jquery.com/jquery-3.4.1.min.js",
+      "globalName": "jquery"
+    },
+    "popper.js": {
+      "path": "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js",
+      "globalName": "popper.js"
+    },
+    "bootstrap": {
+      "path": "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js",
+      "globalName": "bootstrap",
+      "globalDependencies": ["popper.js"]
+    }    
+  },
+  "localizedResources": {
+    "MetrotilesWebPartStrings": "lib/webparts/metrotiles/loc/{locale}.js"
+  }
+}
